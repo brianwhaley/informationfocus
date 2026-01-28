@@ -42,7 +42,27 @@
 			"title": "InformationFocus - Resume",
 			"description": "InformationFocus by Mary Ann Sarao - Competitive Intelligence Consulting",
 			"keywords": "information focus, competitive intelligence, consulting, pharma, pharmaceutical industry, resume"  
-		} 
+		} , 
+		{
+			"name": "Style Guide",
+			"hidden": true,
+			"path": "/styleguide",
+			"title": "InformationFocus - Style Guide",
+			"description": "A full style guide for this website, including color pallete, fonts, and information architecture. ",
+			"keywords": [
+				"InformationFocus", "style guide"
+			]
+		},
+		{
+			"name": "Humans Txt",
+			"hidden": true,
+			"path": "/humans.txt",
+			"title": "InformationFocus - Humans Txt",
+			"description": "A Humans-Only page describing the people who worked on this website. ",
+			"keywords": [
+				"InformationFocus", "humans txt"
+			]
+		}
 	],
 	"visualdesign": {
 		"primary-color": { "value": "#369", "type": "color", "group": "palette", "label": "Primary color" },

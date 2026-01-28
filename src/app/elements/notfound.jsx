@@ -4,7 +4,7 @@ import { SmartImage } from "@pixelated-tech/components";
 
 export default function NotFound() {
 	return (
-		<section>
+		<section id="notfound-section">
 			<div className="section-container" style={{ position: 'relative' }}>
 				<SmartImage
 					alt="Page Not Found"

@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
 	experimental: {
-    	optimizeCss: true,
+    	optimizeCss: false,
   	},
 	outputFileTracingIncludes: {
 		'/**': ['./src/app/config/pixelated.config.json.enc'],
@@ -31,17 +32,19 @@ const nextConfig: NextConfig = {
 		return [];
 	},
 
-	turbopack: {
-		root: __dirname,
-	},
-	webpack: (config) => {
-		config.resolve.fallback = { 
+	turbopack: {},
+
+	webpack: (config: any) => {
+		config.resolve.fallback = {
 			fs: false,
 			path: false
 		};
+		if (!config.resolve) config.resolve = {};
+		if (!config.resolve.alias) config.resolve.alias = {};
+		config.resolve.alias['@'] = path.resolve(__dirname, 'src');
 		return config;
 	},
-
+	
 };
 
 export default nextConfig;
